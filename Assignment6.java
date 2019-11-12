@@ -36,30 +36,30 @@ class Assignment6 {
             //merge firstArray and secArray in an alternating fashion; excluding repeat values
 
             System.out.print("\nMerged Array:");
-            int fillpos = 0;
+            int position = 0;
             for(int i = 0; i < length; i++){
                 boolean flag = false;
-                for(int j = 0; j < fillpos; j++){
+                for(int j = 0; j < position; j++){
                     if(mergeArray[j] == firstArray[i]){
                         flag = true;
                     }
                 }
                 if(!flag){
-                    mergeArray[fillpos] = firstArray[i];
+                    mergeArray[position] = firstArray[i];
                     fillpos++;
                 }
                 flag = false;
-                for(int j = 0; j < fillpos; j++){
+                for(int j = 0; j < position; j++){
                     if(mergeArray[j] == secArray[i]){
                         flag = true;
                     }
                 }
                 if(!flag){
-                    mergeArray[fillpos] = secArray[i];
+                    mergeArray[position] = secArray[i];
                     fillpos++;
                 }
             }
-            for (int i = 0; i < fillpos; i++) {
+            for (int i = 0; i < position; i++) {
                 System.out.print(" " + mergeArray[i]);
             }
     }
