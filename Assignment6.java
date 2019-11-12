@@ -10,22 +10,30 @@ class Assignment6 {
         while (length < 10){
             System.out.println("Enter an array length (must be 10 or greater):");
             length = scanner.nextInt();
-        }
+        }   
+            //initialize arrays
+        
             int[] firstArray = new int[length];
             int[] secArray = new int[length];
-            int[] mergeArray = new int[length * 2];
-
+            int[] mergeArray = new int[length * 2];     //mergeArray must be able to hold maximum length
+            
+            //initialize values in firstArray
+        
             System.out.print("First Array:");
             for (int i = 0; i < length; i++) {
                 firstArray[i] = (int) (Math.random() * 100 + 1);
                 System.out.print(" " + firstArray[i]);
             }
+        
+            //initialize values in secArray
 
             System.out.print("\nSecond Array:");
             for (int i = 0; i < length; i++) {
                 secArray[i] = (int) (Math.random() * 100 + 1);
                 System.out.print(" " + secArray[i]);
             }
+        
+            //merge firstArray and secArray in an alternating fashion; excluding repeat values
 
             System.out.print("\nMerged Array:");
             int fillpos = 0;
