@@ -46,7 +46,7 @@ class Assignment6 {
                 }
                 if(!flag){
                     mergeArray[position] = firstArray[i];
-                    fillpos++;
+                    position++;
                 }
                 flag = false;
                 for(int j = 0; j < position; j++){
@@ -56,7 +56,7 @@ class Assignment6 {
                 }
                 if(!flag){
                     mergeArray[position] = secArray[i];
-                    fillpos++;
+                    position++;
                 }
             }
             for (int i = 0; i < position; i++) {
